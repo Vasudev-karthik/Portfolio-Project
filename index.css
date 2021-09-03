@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #1ebba3;
+    color: transparent;
+    width: 0%;
+    content: '.';
+    height: 3px;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+@media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
+    }
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+  }
+.navbar .navbar-nav .nav-link {
+    transition: all 0.5s;
+  }
+
+  .heading-content{
+    position: absolute;
+	top: 50%;
+	width: 100%;
+	max-width: 100%;
+	padding-left: 600px;
+    font-size: 2em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: #1ebba3;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	animation: text 5s 1;
+  }
+
+  @keyframes text{
+	5%{
+		color: black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-right: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+
+	}  
+
+
+}
+
+@keyframes mymove{
+ 0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
+
